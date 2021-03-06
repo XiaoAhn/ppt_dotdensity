@@ -21,10 +21,6 @@
     </head>
     <body>
         <h1 stype=>US Property Tax Dot Density Map</h1>
-      <!--   <svg height="30" width="30">
-          <circle cx="15" cy="15" r="14" stroke="black" stroke-width="1" fill="red" />
-          <h2>Asseessed Rate Above Average color="red" </h2>
-        </svg> -->
         <div id="map">
             <nav id="menu"></nav>
               <div id="distance" class="distance-container"></div>
@@ -40,7 +36,7 @@
 var map = new mapboxgl.Map({
  container: 'map',
  style: styleJSON,
- center: [-95.74959170331877,36.39342910669439],
+ center: [-98.1494242493952,36.306222176709355],
  zoom: 5,
  bearing: 360.0,
  attributionControl: false
@@ -83,7 +79,7 @@ map.on('mouseleave', 'lyr_stateData_0_0', function () {
 map.on('click', 'lyr_Randompoints_1_0', function (e) {
     var description = '<table>\
                     <tr>\
-                        <td colspan="2"><strong>id</strong><br />' + (e.features[0].properties['id'] !== null ? autolinker.link(e.features[0].properties['id'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (e.features[0].properties['id'] !== null ? autolinker.link(e.features[0].properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>'
 

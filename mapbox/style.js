@@ -38,7 +38,7 @@ var styleJSON = {
             "type": "line",
             "source": "stateData_0",
             "layout": {},
-            "paint": {'line-width': 0.96, 'line-opacity': 1.0, 'line-color': '#3579b1'}
+            "paint": {'line-width': 0.96, 'line-opacity': 1.0, 'line-color': '#b1611a'}
         }
 ,
         {
@@ -54,7 +54,7 @@ var styleJSON = {
             "type": "circle",
             "source": "Randompoints_2",
             "layout": {},
-            "paint": {'circle-radius': ['/', 0.17857142857142858, 2], 'circle-color': '#db1e2a', 'circle-opacity': 1.0, 'circle-stroke-width': 1.4285714285714286, 'circle-stroke-color': '#801119'}
+            "paint": {'circle-radius': ['/', 0.17857142857142858, 2], 'circle-color': '#db3ec1', 'circle-opacity': 1.0, 'circle-stroke-width': 1.4285714285714286, 'circle-stroke-color': '#801119'}
         }
 ],
 }
