@@ -36,7 +36,7 @@
 var map = new mapboxgl.Map({
  container: 'map',
  style: styleJSON,
- center: [-98.1494242493952,36.306222176709355],
+ center: [-98.67539864911718,41.120898588453244],
  zoom: 5,
  bearing: 360.0,
  attributionControl: false
@@ -54,7 +54,7 @@ map.on('click', 'lyr_stateData_0_0', function (e) {
                         <td colspan="2">' + (e.features[0].properties['id'] !== null ? autolinker.link(e.features[0].properties['id'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (e.features[0].properties['name'] !== null ? autolinker.link(e.features[0].properties['name'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>name</strong><br />' + (e.features[0].properties['name'] !== null ? autolinker.link(e.features[0].properties['name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (e.features[0].properties['density'] !== null ? autolinker.link(e.features[0].properties['density'].toLocaleString()) : '') + '</td>\
