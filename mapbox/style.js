@@ -9,7 +9,8 @@ var styleJSON = {
     "sources": {
         "OSMStandard_0": {
             "type": "raster",
-            "tiles": ["https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png"],
+            // "tiles": ["https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png"],
+            "tiles": ["https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"],
             "tileSize": 256
         },
         "stateData_1": {
