@@ -25,8 +25,9 @@
         </div>
         <script src="js/qgis2web_expressions.js"></script>
         <script src="./mapbox/mapbox-gl.js"></script>
-        <script src="data/Randompoints_1.js"></script>
+        <script src="data/stateData_1.js"></script>
         <script src="data/Randompoints_2.js"></script>
+        <script src="data/Randompoints_3.js"></script>
 <script src="./mapbox/style.js"></script>
 <script src="./js/Autolinker.min.js"></script>
 <script>
@@ -34,7 +35,7 @@ var map = new mapboxgl.Map({
  container: 'map',
  style: styleJSON,
  center: [-96.91733211867086,38.0105713218711],
- zoom: 4,
+ zoom: 5,
  bearing: 360.0,
  attributionControl: false
 });
@@ -45,10 +46,16 @@ map.addControl(new mapboxgl.AttributionControl({
 }));
 var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
 
-map.on('click', 'lyr_Randompoints_1_0', function (e) {
+map.on('click', 'lyr_stateData_1_0', function (e) {
     var description = '<table>\
                     <tr>\
                         <td colspan="2">' + (e.features[0].properties['id'] !== null ? autolinker.link(e.features[0].properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2"><strong>name</strong><br />' + (e.features[0].properties['name'] !== null ? autolinker.link(e.features[0].properties['name'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['density'] !== null ? autolinker.link(e.features[0].properties['density'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>'
 
@@ -59,12 +66,12 @@ map.on('click', 'lyr_Randompoints_1_0', function (e) {
 });
 
 // Change the cursor to a pointer when the mouse is over the places layer.
-map.on('mouseenter', 'lyr_Randompoints_1_0', function () {
+map.on('mouseenter', 'lyr_stateData_1_0', function () {
     map.getCanvas().style.cursor = 'pointer';
 });
 
 // Change it back to a pointer when it leaves.
-map.on('mouseleave', 'lyr_Randompoints_1_0', function () {
+map.on('mouseleave', 'lyr_stateData_1_0', function () {
     map.getCanvas().style.cursor = '';
 });
 map.on('click', 'lyr_Randompoints_2_0', function (e) {
@@ -87,6 +94,28 @@ map.on('mouseenter', 'lyr_Randompoints_2_0', function () {
 
 // Change it back to a pointer when it leaves.
 map.on('mouseleave', 'lyr_Randompoints_2_0', function () {
+    map.getCanvas().style.cursor = '';
+});
+map.on('click', 'lyr_Randompoints_3_0', function (e) {
+    var description = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (e.features[0].properties['id'] !== null ? autolinker.link(e.features[0].properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>'
+
+    new mapboxgl.Popup()
+        .setLngLat(e.lngLat)
+        .setHTML(description)
+        .addTo(map);
+});
+
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'lyr_Randompoints_3_0', function () {
+    map.getCanvas().style.cursor = 'pointer';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'lyr_Randompoints_3_0', function () {
     map.getCanvas().style.cursor = '';
 });
 </script>
