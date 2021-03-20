@@ -9,7 +9,7 @@ var styleJSON = {
     "sources": {
         "OSMStandard_0": {
             "type": "raster",
-            "tiles": ["http://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+            "tiles": ["https://www.openstreetmap.org/#map=5/40.702/-103.781"],
             "tileSize": 256
         },
         "stateData_1": {
