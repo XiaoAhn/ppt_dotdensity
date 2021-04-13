@@ -57,7 +57,7 @@ var styleJSON = {
             "type": "circle",
             "source": "Randompoints_2",
             "layout": {},
-            "paint": {'circle-radius': ['/', 0.21428571428571427, 2], 'circle-color': '#487bb6', 'circle-opacity': 1.0, 'circle-stroke-width': 1.4285714285714286, 'circle-stroke-color': '#325780'}
+            "paint": {'circle-radius': ['/', 0.0021428571428571427, 2], 'circle-color': '#487bb6', 'circle-opacity': 1.0, 'circle-stroke-width': 0.8285714285714286, 'circle-stroke-color': '#325780'}
         }
 ,
         {
@@ -65,7 +65,7 @@ var styleJSON = {
             "type": "circle",
             "source": "Randompoints_3",
             "layout": {},
-            "paint": {'circle-radius': ['/', 0.06785714285714285, 2], 'circle-color': '#db1e2a', 'circle-opacity': 1.0, 'circle-stroke-width': 1.4285714285714286, 'circle-stroke-color': '#801119'}
+            "paint": {'circle-radius': ['/', 0.0006785714285714285, 2], 'circle-color': '#db1e2a', 'circle-opacity': 1.0, 'circle-stroke-width': 0.8285714285714286, 'circle-stroke-color': '#801119'}
         }
 ],
 }
