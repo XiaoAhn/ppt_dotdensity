@@ -13,19 +13,19 @@ var styleJSON = {
             // "tiles": ["https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"],
             "tileSize": 256
         },
-        "stateData_1": {
+        "blue11dot1_1": {
             "type": "geojson",
-            "data": json_stateData_1
+            "data": json_blue11dot1_1
         }
                     ,
-        "Randompoints_2": {
+        "stateData_2": {
             "type": "geojson",
-            "data": json_Randompoints_2
+            "data": json_stateData_2
         }
                     ,
-        "Randompoints_3": {
+        "red11dot1_3": {
             "type": "geojson",
-            "data": json_Randompoints_3
+            "data": json_red11dot1_3
         }
                     },
     "sprite": "",
@@ -45,27 +45,27 @@ var styleJSON = {
             "source": "OSMStandard_0"
         },
         {
-            "id": "lyr_stateData_1_0",
+            "id": "lyr_blue11dot1_1_0",
+            "type": "circle",
+            "source": "blue11dot1_1",
+            "layout": {},
+            "paint": {'circle-radius': ['/', 1.0, 2], 'circle-color': '#4814fc', 'circle-opacity': 1.0, 'circle-stroke-width': 0.4, 'circle-stroke-color': '#325780'}
+        }
+,
+        {
+            "id": "lyr_stateData_2_0",
             "type": "line",
-            "source": "stateData_1",
+            "source": "stateData_2",
             "layout": {},
-            "paint": {'line-width': 0.96, 'line-opacity': 1.0, 'line-color': '#a2b1b0'}
+            "paint": {'line-width': 0.96, 'line-opacity': 0.211, 'line-color': '#3579b1'}
         }
 ,
         {
-            "id": "lyr_Randompoints_2_0",
+            "id": "lyr_red11dot1_3_0",
             "type": "circle",
-            "source": "Randompoints_2",
+            "source": "red11dot1_3",
             "layout": {},
-            "paint": {'circle-radius': ['/', 0.0021428571428571427, 2], 'circle-color': '#487bb6', 'circle-opacity': 1.0, 'circle-stroke-width': 0.8285714285714286, 'circle-stroke-color': '#325780'}
-        }
-,
-        {
-            "id": "lyr_Randompoints_3_0",
-            "type": "circle",
-            "source": "Randompoints_3",
-            "layout": {},
-            "paint": {'circle-radius': ['/', 0.0006785714285714285, 2], 'circle-color': '#db1e2a', 'circle-opacity': 1.0, 'circle-stroke-width': 0.8285714285714286, 'circle-stroke-color': '#801119'}
+            "paint": {'circle-radius': ['/', 1.0, 2], 'circle-color': '#ff41f4', 'circle-opacity': 1.0, 'circle-stroke-width': 0.4, 'circle-stroke-color': '#801119'}
         }
 ],
 }
